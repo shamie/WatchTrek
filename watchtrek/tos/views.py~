@@ -6,7 +6,8 @@ from django.shortcuts import get_object_or_404, render_to_response
 import random
 
 
-def root(request):        
+def root(request):
+        
     seasons = [1, 2, 3]
     season1 = []
     season2 = []

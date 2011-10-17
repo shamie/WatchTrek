@@ -13,6 +13,10 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'tng/', 'watchtrek.tng.views.root'),
     url(r'tos/', 'watchtrek.tos.views.root'),
+    url(r'ds9/', 'watchtrek.ds9.views.root'),
+    url(r'tas/', 'watchtrek.tas.views.root'),
+    url(r'voy/', 'watchtrek.voy.views.root'),
+    url(r'ent/', 'watchtrek.ent.views.root'),
     url(r'^$', 'watchtrek.tng.views.root'),
 
     # Uncomment the next line to enable the admin:
