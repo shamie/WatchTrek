@@ -59,6 +59,6 @@ def root(request):
 		e = season6[0]
 	else:
 		random.shuffle(season7)
-        e = season7[0]
+                e = season7[0]
 	    
         return HttpResponse("Season: " + str(season) + ", Episode: " + str(e) )
