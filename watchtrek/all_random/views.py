@@ -33,7 +33,9 @@ def root(request):
 	    else:
 		    random.shuffle(season3)
 		    e = season3[0]
-		
+
+    return HttpResponse("The Original Series, Season: " + str(season) + ", Episode: " + str(e))		
+
     def TAS():
 	    seasons = [1, 2]
 	    season1 = []
@@ -55,6 +57,8 @@ def root(request):
 		    random.shuffle(season2)
 		    e = season2[0]
 
+    return HttpResponse("The Animated Series, Season: " + str(season) + ", Episode: " + str(e) )
+    
     def TNG():
 	    seasons = [1, 2, 3, 4, 5, 6, 7]
 	    season1 = []
@@ -110,7 +114,9 @@ def root(request):
 	    else:
 		    random.shuffle(season7)
 		    e = season7[0]
-
+        
+    return HttpResponse("The Next Generation, Season: " + str(season) + ", Episode: " + str(e) )
+    
     def DS9():
 	    seasons = [1, 2, 3, 4, 5, 6, 7]
 	    season1 = []
@@ -166,6 +172,8 @@ def root(request):
 	    else:
 		    random.shuffle(season7)
 		    e = season7[0]
+	
+    return HttpResponse("Deep Space Nine, Season: " + str(season) + ", Episode: " + str(e) )
 		    
     def VOY():
 	    seasons = [1, 2, 3, 4, 5, 6, 7]
@@ -222,7 +230,8 @@ def root(request):
 	    else:
 		    random.shuffle(season7)
 		    e = season7[0]
-
+    return HttpResponse("Voyager, Season: " + str(season) + ", Episode: " + str(e) )
+    
     def ENT():
 	    seasons = [1, 2, 3, 4]
 	    season1 = []
@@ -257,7 +266,9 @@ def root(request):
 	    else:
 		    random.shuffle(season4)
 		    e = season4[0]
-    
+		
+    return HttpResponse("Enterprise, Season: " + str(season) + ", Episode: " + str(e) )
+
     which_series = ["The Original Series","The Animated Series", "The Next Generation","Deep Space Nine","Voyager", "Enterprise"]
 
     random.shuffle(which_series)
@@ -275,5 +286,3 @@ def root(request):
 	    VOY()
     else:
 	    ENT()
-	
-	    return HttpResponse("Series: " + str(series) + ", Season: " + str(season) + ", Episode: " + str(e) )
