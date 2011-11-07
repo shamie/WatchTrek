@@ -276,13 +276,19 @@ def root(request):
 
     if series == "The Original Series":
         TOS()
+        return TOS()
     elif series == "The Animated Series":
         TAS()
+        return TAS()
     elif series == "The Next Generation":
         TNG()
+        return TNG()
     elif series == "Deep Space Nine":
         DS9()
+        return DS9()
     elif series == "Voyager":
         VOY()
+        return VOY()
     else:
         ENT()
+        return ENT()
